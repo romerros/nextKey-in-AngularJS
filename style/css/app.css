@@ -1,0 +1,146 @@
+html {
+    height: 100%;
+    background-image: url(../img/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    height: 98%;
+    width: 98%;
+}
+
+.container {
+    display: block;
+    height: 600px;
+    width: auto;
+    overflow: auto;
+    border: 10px solid rgba(208, 197, 255, 0.47);
+    border-radius: 25px;
+}
+
+.locker {
+    float: left;
+    width: 3.5em;
+    height: 3.5em;
+    margin: 1.5em;
+    margin-right: 1.5em;
+    border-style: solid;
+    border-color: rgb(113, 95, 193);
+    border-radius: 15px;
+    border-width: 5px;
+    background-color: rgba(255, 238, 225, 0.9);
+    box-shadow: 0 0 10px #3e3e3e;
+    text-align: center;
+    font-size: 1.9em;
+    transition: 0.3s;
+}
+
+.locker--locked {
+    background-color: rgb(224, 40, 40);
+    border-color: rgb(77, 69, 64);
+    cursor: pointer;
+    color: white;
+}
+
+.locker--locked:hover {
+    transition: all;
+    cursor: pointer;
+    background-color: rgb(255, 180, 125);
+    transition-duration: 0.3s;
+    box-shadow: 0 0 1.2em #000000;
+}
+
+.locker--locked:active {
+    background-color: white;
+}
+
+
+.trash1 {
+    margin-left: -10px;
+    margin-top: -7px;
+    background-image: url(../img/trash1.png);
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 16px;
+}
+
+.trash2 {
+    margin-top: -8px;
+    margin-left: -10px;
+    background-image: url(../img/trash2.png);
+    display: inline-block;
+    position: absolute;
+    background-repeat: no-repeat;
+    transition: 125ms;
+    height: 18px;
+    width: 16px;
+}
+
+.trash2:hover {
+    transform-origin: 7% 100%;
+    transform-origin: left;
+    transform: rotate(-30deg);
+    transition: 125ms;
+    transition-property: all;
+    cursor: pointer;
+}
+
+.nextLocker {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 0.2em;
+    font-size: 2em;
+    color: white;
+    background: linear-gradient(#59829b, #191514, #7c4cff);
+    outline: inherit;
+}
+
+.nextLocker:hover {
+    background: linear-gradient(#4319b5, #496da8, #1859ed);
+    cursor: pointer;
+}
+
+.nextLocker:active {
+   background: #ffe6c5; 
+   color: rgb(10, 0, 255);
+}
+
+.addLocker {
+    border-radius: 0.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2em;
+    color: white;
+    background: linear-gradient(#59829b, #191514, #7c4cff);
+    outline: inherit;
+}
+
+.addLocker:hover {
+    background: linear-gradient(#4319b5, #496da8, #1859ed);
+    cursor: pointer;
+}
+
+.addLocker:active {
+    background: #ffe6c5; 
+    color: rgb(10, 0, 255);
+}
+
+label {
+    color: #c1c1c1;
+}
+
+.guests {
+    position: absolute;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 1px #003365;
+    color: #c1c1c1;
+    margin-left: -308px;
+    margin-top: 90px;
+}
+
+.today {
+    margin-left: 10px;
+}

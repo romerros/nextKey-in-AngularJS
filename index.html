@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Grand Sport</title>
+    <link rel="stylesheet" href="style/css/bootstrap.css">
+    <link rel="stylesheet" href="style/css/app.css">
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="ctrl/controller.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+</head>
+<body>
+    <div class="container" ng-include = "'templates/locker-template.html'"></div>
+    <button class="nextLocker" title="Get Next Locker`s Key">Next Key</button>  
+    <button class="addLocker" title="Ceate a New Locker">+</button>
+    <input id="editLockers" type="checkbox" class="unlockTrashBox"/>
+    <label for="editLockers">Show Trashes</label>
+    <span class="guests">Guests per day: <h class="today">0</h></span>
+</body>
+</html>
